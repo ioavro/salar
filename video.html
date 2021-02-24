@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Iranian Truffle</title>
+<meta charset="utf-8">
+<meta name="description" content="Iranian Truffle">
+<link rel="stylesheet" href="styleloading.css">
+    </head>
+    <body style="background-image: url(F5F5F5.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size:cover;" alink="#cccccc" link="#cccccc" vlink="#f3dbc0">
+<header> 
+    <nav style="background-color : #262626; padding: 10px; width: 100%; position: fixed; top: 0; left: 0;">
+        <ul type=none>
+            <font size="4">
+            <li style="display: inline;"><a href="index.html" style="text-decoration: none;font-family: 'Courier New', monospac;">Home Us</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li style="display: inline;"><a href="blog.html" style="text-decoration: none;font-family: 'Courier New', monospac;">Blog</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li style="display: inline;"><a href="video.html" style="text-decoration: none;font-family: 'Courier New', monospac;">Video</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li style="display: inline;"><a href="gallery.html" style="text-decoration: none;font-family: 'Courier New', monospac;">Gallery</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li style="display: inline;"><a href="aboutus.html" style="text-decoration: none;font-family: 'Courier New', monospac;">About Us</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li style="display: inline;"><a href="contactus.html" style="text-decoration: none;font-family: 'Courier New', monospac;">Contact Us</a></li>
+            </font>
+        </ul>
+    </nav>
+<br><br><br><br>
+</header>
+<main>
+    <div class="container">
+    <div class="heading">Video Gallery</div>
+    <div class="video-container">
+        <div class="video">
+            <video src="video/07.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/10.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/05.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/06.mp4"></video>
+        </div>
+        <div class="video">
+            <video src="video/04.mp4"></video>
+        </div>
+    </div>
+    </div>
+    <script>
+        var video=document.querySelectorAll('video')
+        video.forEach(play => play.addEventListener('click',() =>{
+            play.classList.toggle('active');
+            if(play.paused){
+                play.play();
+            }else{
+                play.pause();
+                play.currentTime= 0
+            }
+        }));
+    </script>
+</main>
+<footer>
+</footer>
+    </body>
+</html>
